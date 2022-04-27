@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Type Registration</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body {
+        background-color: rgb(2, 8, 125);
+        color: aqua;
+    }
+
+    img {
+        width: 30%;
+        margin: 10px;
+    }
+
+    .heading {
+        text-align: center;
+        padding: 30px 0px;
+        z-index: 5;
+        box-shadow: 0px 5px 15px;
+        background-color: rgb(125, 131, 255);
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        /* margin: 10px;
+        padding: 100px; */
+    }
+
+    form {
+        width: 25vw;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid aqua;
+        border-radius: 10px;
+        /* background-color: rgb(240, 0, 188); */
+        background-image: linear-gradient(to bottom right, rgb(0, 34, 109) 0%, rgb(95, 0, 75) 80%, rgb(102, 0, 24) 100%);
+        box-shadow: 0px 0px 10px;
+    }
+
+    form:hover {
+        box-shadow: 0px 0px 25px;
+        transition: all ease .4s;
+    }
+
+    span {
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+
+
+    input {
+        border-radius: 16px;
+        margin: 10px 0px;
+        padding: 5px 10px;
+    }
+
+    .items {
+        padding: 5px 2px;
+    }
+
+    .submit {
+        font-weight: bold;
+        padding: 10px 15px;
+        background-color: rgb(86, 176, 255);
+        box-shadow: 3px 3px 3px;
+    }
+
+    .submit:hover {
+        background-color: rgb(72, 154, 225);
+        box-shadow: 3px 3px 8px;
+    }
+
+    .submit:active {
+        box-shadow: 3px 3px 0px;
+    }
+
+    label {
+        font-size: 1.1em;
+    }
+
+
+
+    select {
+        border-radius: 8px;
+        margin-left: 10px;
+    }
+</style>
+
+<body>
+
+
+
+    <nav>
+        <h2 class="heading">Registration Form</h2>
+    </nav>
+    <div class="container">
+        <form method="post" id="giveme100rs">
+
+            <!-- <img src="./Stupid.jpeg" alt="ICON"> -->
+
+
+            <span><label for="registration_number" class="red">Registration Number</label><br>
+                <input id="user-res-number" type="text" placeholder="ex: 20BCE1022" name="registration_number"></span>
+            <span><label for="name" class="red">Full Name</label><br>
+                <input id="user-username" type="text" placeholder="User Name" name="name"></span>
+
+            <span class="dropdown">
+                <label class="lable">Choose Mess</label>
+                <select class="items" name="mess" id="lang">
+                    <option class="drop-items" value="veg">Veg</option>
+                    <option class="drop-items" value="nonveg">Non Veg</option>
+                    <option class="drop-items" value="special">Special</option>
+                </select>
+            </span>
+
+
+            <!-- <button id="submit-btn">Submit</button> -->
+            <input type="submit" class="submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
